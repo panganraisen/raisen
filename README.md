@@ -2,7 +2,7 @@
 print("Hello, I'm Majesty Paumar! BSIT 1-O")
 
 #Python Comments
-# My first simple script 
+#My first simple script 
 print("This is my first simple script")
 
 #Python Variables
@@ -24,7 +24,7 @@ print(x)
 print(y)
 print(z)
 
-# One Value to Multiple Variables
+#One Value to Multiple Variables
 a = b = c = "Pomelo"
 print(a)
 print(b)
