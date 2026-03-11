@@ -1,5 +1,5 @@
 #Simple program
-print("Hello, I'm Majesty Paumar! BSIT 1-O")
+print("Hello, I'm Raisen Pangan! BSIT 1-O")
 
 #Python Comments
 #My first simple script 
