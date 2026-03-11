@@ -1,1 +1,31 @@
-# raisen
+#Simple program
+print("Hello, I'm Majesty Paumar! BSIT 1-O")
+
+#Python Comments
+# My first simple script
+print("This is my first simple script")
+
+#Python Variables
+number = 13
+name = "Raisen"
+print (number)
+print(name)
+
+#Python Variable Names
+majesty = "Majesty"
+jamella = "Jamella"
+aldrin = "Aldrin"
+mark angel = "Mark Angel"
+print(majesty, jamella, aldrin, mark angel)
+
+#Many Values to Multiple Variables
+x, y, z = 4, 22, 19
+print(x)
+print(y)
+print(z)
+
+# One Value to Multiple Variables
+a = b = c = "Pomelo"
+print(a)
+print(b)
+print(c)
