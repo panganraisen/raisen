@@ -1,0 +1,48 @@
+MDAS
+# Integer variables
+a_int = 10
+b_int = 3
+
+print("Integer Operations:")
+print("Addition:", a_int + b_int)
+print("Subtraction:", a_int - b_int)
+print("Multiplication:", a_int * b_int)
+print("Division:", a_int / b_int)
+print("Modulus:", a_int % b_int)
+print("Exponent:", a_int ** b_int)
+
+# Float variables
+a_float = 10.5
+b_float = 2.5
+
+print("\nFloat Operations:")
+print("Addition:", a_float + b_float)
+print("Subtraction:", a_float - b_float)
+print("Multiplication:", a_float * b_float)
+print("Division:", a_float / b_float)
+print("Modulus:", a_float % b_float)
+print("Exponent:", a_float ** b_float)
+# Complex variables
+a_complex = 2 + 3j
+b_complex = 1 + 4j
+
+print("\nComplex Operations:")
+print("Addition:", a_complex + b_complex)
+print("Subtraction:", a_complex - b_complex)
+print("Multiplication:", a_complex * b_complex)
+print("Division:", a_complex / b_complex)
+print("Exponent:", a_complex ** 2)
+# Integer literal with and without underscores
+num1 = 25000000
+num2 = 25_000_000
+
+print(num1)
+print(num2)
+# Creating int, float, and complex variables
+x = 100        
+y = 10.75      
+z = 3 + 5j     
+
+print("x:", x, "Type:", type(x))
+print("y:", y, "Type:", type(y))
+print("z:", z, "Type:", type(z))
