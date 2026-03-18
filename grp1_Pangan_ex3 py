@@ -15,7 +15,7 @@ print(name)
 majesty = "Majesty"
 jamella = "Jamella"
 aldrin = "Aldrin"
-mark angel = "Mark Angel"
+mark  = "Mark"
 print(majesty, jamella, aldrin, mark angel)
 
 #Many Values to Multiple Variables
