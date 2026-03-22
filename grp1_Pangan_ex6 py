@@ -1,0 +1,29 @@
+# Condition with if-statement
+temperature = 30
+if temperature >= 25:
+    print("It's hot outside:", True)
+else:
+    print("It's hot outside:", False)
+
+# List example (pet info)
+pet_list = ["Dog", 2, True]  
+# "Dog" = string, 2 = age in years, True = vaccinated
+print("List:", pet_list)
+
+# Tuple example (phone info)
+phone_tuple = ("Samsung Galaxy", 11, True)  
+# "Samsung Galaxy" = brand, 11 = years old, True = still working
+print("Tuple:", phone_tuple)
+
+# Set example (game info)
+game_set = {"Minecraft", 12, True}  
+# "Minecraft" = title, 12 = years since release, True = still popular
+print("Set:", game_set)
+
+# Dictionary example (student info)
+student_dict = {
+    "name": "Raisen",     # string
+    "grade": 12,         # int
+    "graduated": True    # boolean
+}
+print("Dictionary:", student_dict)
