@@ -1,0 +1,69 @@
+PART 1
+
+# Tuple of 5 favorite fruits
+fruits = ("apple", "banana", "mango", "grapes", "orange")
+print(fruits)
+
+# List of 5 daily tasks
+tasks = ["study", "exercise", "cook", "read", "sleep"]
+print(tasks)
+
+# Set of unique numbers
+unique_numbers = set([1, 2, 2, 3, 4, 4, 5])
+print(unique_numbers)
+
+# Dictionary with keys
+student = {
+    "name": "Raisen",
+    "age": 19,
+    "course": "BSIT"
+}
+print(student)
+
+# PART 2
+
+# List of 5 daily tasks
+tasks = ["study", "exercise", "cook", "read", "sleep"]
+print(tasks)
+# Add a new task
+tasks.append("meditate")
+# Remove one task
+tasks.remove("cook")
+# Sort the list
+tasks.sort()
+print(tasks)
+
+# Tuple of 5 favorite fruits
+fruits = ("apple", "banana", "mango", "grapes", "orange")
+print(fruits)
+# Try to change one value
+fruits[0] = "pineapple"
+
+# Set of unique numbers
+unique_numbers = set([1, 2, 2, 3, 4, 4, 5])
+print(unique_numbers)
+# Add a number
+unique_numbers.add(6)
+# Remove a number
+unique_numbers.remove(3)
+# Show how duplicates are removed
+print(unique_numbers)
+
+# Dictionary with keys
+student = {
+    "name": "Raisen",
+    "age": 19,
+    "course": "BSIT"
+}
+print(student)
+# Add a new key "grade"
+student["grade"] = "95"
+# Update "age"
+student["age"] = 20
+# Print all keys and values
+for key, value in student.items():
+    print(key, ":", value)
+
+
+
+
