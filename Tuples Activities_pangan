@@ -1,0 +1,26 @@
+# Activity 1
+colors = ("red", "green", "blue")
+# Print the first and last item
+print(colors[0])   
+print(colors[-1])  
+#Activity 2
+numbers = (10, 20, 30, 40, 50)
+# Print (20, 30, 40)
+print(numbers[1:4])   
+#Activity 3
+nums = (1, 2, 2, 3, 2)
+# Count how many times 2 appears
+print(nums.count(2))  
+# Find index of 3
+print(nums.index(3))   
+#Activity 4
+point = (5, 10)
+# Assign values to x and y
+x, y = point
+print("x =", x, "y =", y)   
+# Activity 5 
+t1 = (1, 2)
+t2 = (3, 4)
+# Combine and repeat twice
+combined = (t1 + t2) * 2
+print(combined)   
