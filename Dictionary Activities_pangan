@@ -1,0 +1,32 @@
+#Activity 1
+student = {
+   "name": "Raisen",
+   "age": 19,
+   "course": "BSIT"
+}
+print(student["name"])   # Should print Raisen
+#Activity 2
+student = {"name": "Raisen", "age": 19}
+# Add grade
+student["grade"] = 94
+# Update age
+student["age"] = 20
+print(student)
+#Activity 3
+car = {"brand": "Toyota", "model": "Corolla", "year": 2020}
+for key, value in car.items():
+    print(key, ":", value)
+#Activity 4 
+# Create dictionary with names and phone numbers
+phonebook = {
+    "Raisen": "09169876543",
+    "Majesty": "09231234567",
+    "Aldrin": "09939998877"
+}
+# Ask user for a name
+name = "Raisen"
+# Print the number if found
+if name in phonebook:
+    print("Number:", phonebook[name])
+else:
+    print("Name not found")
