@@ -1,0 +1,26 @@
+#Act 1
+numbers = [1, 2, 2, 3, 4, 4, 5]
+# Convert to set and print unique values
+unique_numbers = set(numbers)
+print(unique_numbers)
+#Act 2
+fruits = {"apple", "banana"}
+# Add "orange"
+fruits.add("orange")
+# Remove "banana"
+fruits.remove("banana")
+print(fruits)
+#Act 3
+A = {1, 2, 3}
+B = {3, 4, 5}
+# union
+print(A.union(B))       # {1, 2, 3, 4, 5}
+# intersection
+print(A.intersection(B))  # {3}
+#Act 4
+classA = {"Ruzelle", "Raisen", "Majesty"}
+classB = {"Raisen", "Majesty", "Jamella"}
+# Students in BOTH classes
+print(classA.intersection(classB))   # {'Majesty', 'Raisen'}
+# ALL students
+print(classA.union(classB))          # {'Ruzelle', 'Raisen', 'Majesty', 'Jamella'}
