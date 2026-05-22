@@ -1,0 +1,74 @@
+import random
+
+def choose_word():
+    """Chooses a random word from a predefined list."""
+    words = ["python", "hangman", "computer", "programming", "game", "challenge"]
+    return random.choice(words)
+
+def display_word(word, guessed_letters):
+    """Displays the word with guessed letters and underscores for missing ones."""
+    display = ""
+    for letter in word:
+        if letter in guessed_letters:
+            display += letter + " "
+        else:
+            display += "_ "
+    return display.strip()
+
+def get_user_guess(guessed_letters):
+    """Prompts the user to guess a letter."""
+    while True:
+        guess = input("Guess a letter: ").lower()
+        if len(guess) == 1 and guess.isalpha():
+            if guess not in guessed_letters:
+                return guess
+            else:
+                print("You already guessed that letter. Try again.")
+        else:
+            print("Invalid input. Please enter a single letter.")
+
+def check_guess(word, guess, guessed_letters):
+    """Checks if the guessed letter is in the word."""
+    guessed_letters.add(guess)
+    if guess in word:
+        print(f"Good job! '{guess}' is in the word.")
+    else:
+        print(f"Sorry, '{guess}' is not in the word.")
+
+def play_again():
+    """Asks if the user wants to play again."""
+    choice = input("Do you want to play again? (y/n): ").lower()
+    return choice == 'y'
+
+def main():
+    """Main function to run the Hangman game."""
+    print("🎮 Welcome to Hangman!")
+
+    while True:
+        word = choose_word()
+        guessed_letters = set()
+        attempts = 6
+
+        while attempts > 0:
+            print("\nWord:", display_word(word, guessed_letters))
+            print("Attempts left:", attempts)
+
+            guess = get_user_guess(guessed_letters)
+            check_guess(word, guess, guessed_letters)
+
+            if all(letter in guessed_letters for letter in word):
+                print("🎉 Congratulations! You guessed the word:", word)
+                break
+
+            if guess not in word:
+                attempts -= 1
+
+        if attempts == 0:
+            print("😢 Game over! The word was:", word)
+
+        if not play_again():
+            print("Thanks for playing! Goodbye 👋")
+            break
+
+if __name__ == "__main__":
+    main()
